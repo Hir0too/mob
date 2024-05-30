@@ -1,0 +1,44 @@
+Introduction
+Le programme présenté est un programme de gestion de location de voitures. Il permet de réaliser plusieurs opérations telles que l'ajout, la modification, la suppression, la recherche et le tri des voitures dans une base de données. Les voitures sont stockées dans un fichier CSV ("bd.csv") et sont manipulées à travers diverses fonctions.
+
+Structure du Programme
+Définition de la Structure Voiture
+Le programme commence par définir une structure Voiture qui représente les informations d'une voiture :
+
+ID : Identifiant unique de la voiture.
+Marque : Marque de la voiture.
+Type_Carburant : Type de carburant utilisé par la voiture.
+Modele : Modèle de la voiture.
+Nbre_Places : Nombre de places disponibles dans la voiture.
+Transmission_Auto : Indique si la transmission est automatique (1 pour oui, 0 pour non).
+Prix_Location : Prix de location de la voiture par jour.
+Disponibilite : Indique si la voiture est disponible pour la location (1 pour oui, 0 pour non).
+Fonctions Principales
+Ajout d'une voiture : La fonction ajout(Voiture v) permet d'ajouter une nouvelle voiture dans le fichier CSV.
+Affichage des voitures : La fonction affichage(Voiture *v, int taille) affiche toutes les voitures présentes dans la base de données.
+Recherche par marque : La fonction recherche_Mar(Voiture *v, int taille) permet de rechercher toutes les voitures d'une marque spécifique.
+Recherche par disponibilité : La fonction recherche_Disp(Voiture *v, int taille) affiche toutes les voitures disponibles pour la location.
+Tri par marque : La fonction tri_Marque(Voiture *v, int taille) trie les voitures par marque par ordre alphabétique et met à jour le fichier CSV.
+Tri par prix de location : La fonction tri_Prix(Voiture *v, int taille) trie les voitures par prix de location en ordre décroissant et met à jour le fichier CSV.
+Suppression d'une voiture : La fonction supp_Voiture(Voiture *v, int taille) permet de supprimer une voiture à partir de son ID.
+Modification de la disponibilité d'une voiture : La fonction modif_Voiture(Voiture *v, int taille) permet de modifier la disponibilité d'une voiture.
+Lecture et Manipulation des Données
+La fonction lecture(int para) lit les données du fichier CSV et exécute une opération en fonction du paramètre para :
+
+para==1 : Affichage des voitures.
+para==2 : Tri des voitures par prix.
+para==3 : Tri des voitures par marque.
+para==4 : Recherche par marque.
+para==5 : Recherche par disponibilité.
+para==6 : Suppression d'une voiture.
+para==7 : Modification de la disponibilité d'une voiture.
+Menu Principal
+Le programme contient un menu principal qui permet à l'utilisateur de choisir parmi les différentes opérations :
+
+Mise à jour des voitures (Ajout, Modification, Suppression)
+Affichage des voitures
+Tri des voitures
+Recherche de voitures
+Quitter le programme
+Conclusion
+Le programme de gestion de location de voitures est complet et bien structuré. Il permet de gérer efficacement une base de données de voitures en offrant des fonctionnalités variées et utiles. Chaque opération est bien définie et le menu principal rend le programme facile à utiliser pour l'utilisateur final.
